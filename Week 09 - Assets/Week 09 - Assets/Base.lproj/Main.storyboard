@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week_09___Assets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DudePlain" translatesAutoresizingMaskIntoConstraints="NO" id="YdN-i3-Voo">
+                                <rect key="frame" x="0.0" y="59" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YdN-i3-Voo" secondAttribute="height" multiplier="1:1" id="vs4-qp-vIN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFw-T5-FeM">
+                                <rect key="frame" x="127.00000000000001" y="472" width="139.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Toggle Glasses"/>
+                                <connections>
+                                    <action selector="toggleButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvW-Kd-wGZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YdN-i3-Voo" secondAttribute="trailing" id="AX6-tf-xxt"/>
+                            <constraint firstItem="xFw-T5-FeM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EHA-ff-40o"/>
+                            <constraint firstItem="YdN-i3-Voo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YxZ-Od-p9g"/>
+                            <constraint firstItem="YdN-i3-Voo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fME-ih-9WY"/>
+                            <constraint firstItem="xFw-T5-FeM" firstAttribute="top" secondItem="YdN-i3-Voo" secondAttribute="bottom" constant="20" id="zx6-Ik-PdE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theImage" destination="YdN-i3-Voo" id="Usy-aa-iaY"/>
+                        <outlet property="toggleButton" destination="xFw-T5-FeM" id="UVs-IH-3w8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DudePlain" width="684" height="735"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
